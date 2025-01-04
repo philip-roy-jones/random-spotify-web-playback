@@ -90,7 +90,7 @@
     "size": "size-limit",
     "prepublishOnly": "npm run validate",
     "prepare": "husky",
-    "postinstall": "cd node_modules/random-spotify-web-playback && npm run build"
+    "postinstall": "dir && cd node_modules/random-spotify-web-playback && npm run build"
   },
   "tsup": {
     "dts": true,
