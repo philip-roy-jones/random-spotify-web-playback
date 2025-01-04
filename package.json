@@ -89,8 +89,7 @@
     "validate": "npm run lint && npm run typecheck && npm run test:coverage && npm run build && npm run typevalidation && npm run size",
     "size": "size-limit",
     "prepublishOnly": "npm run validate",
-    "prepare": "husky",
-    "postinstall": "pnpm run build"
+    "prepare": "husky"
   },
   "tsup": {
     "dts": true,
