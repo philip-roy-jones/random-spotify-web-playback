@@ -1,11 +1,11 @@
 {
   "name": "random-spotify-web-playback",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "A React Spotify Web Player customized for the Random Spotify project, forked from version 0.14.6 of react-spotify-web-playback",
   "author": "Philip Jones <jones.philipr@gmail.com>",
   "repository": {
     "type": "git",
-    "url": "git@github.com:philip-roy-jones/random-spotify-web-playback.git"
+    "url": "git+ssh://git@github.com/philip-roy-jones/random-spotify-web-playback.git"
   },
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -89,7 +89,8 @@
     "validate": "npm run lint && npm run typecheck && npm run test:coverage && npm run build && npm run typevalidation && npm run size",
     "size": "size-limit",
     "prepublishOnly": "npm run validate",
-    "prepare": "husky"
+    "prepare": "husky",
+    "postinstall": "cd node_modules/random-spotify-web-playback && npm run build"
   },
   "tsup": {
     "dts": true,
